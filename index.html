@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified JQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- Latest compiled and minified JS -->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>gameHabit Registration</title>
+  </head>
+  <body>
+    <form class="jumbotron" method="post">
+      <fieldset class="container">
+          
+        <section class="row">
+          <section class="col-xs-6">
+                             
+            <label for="username">Username</label>
+              <input name="username" type="text" placeholder=" Enter your name" required="">
+                <span class="error"></span><br>
+                
+            <label for="password">Password</label>
+              <input name="password" type="password" required="">
+                <span class="error"></span><br>
+                      
+            <label for="verify">Verify Password</label>
+              <input name="verify" type="password" required="">
+                <span class="error"></span><br>
+                        
+            <label for="email">Email</label>
+              <input name="email" type="email" placeholder=" Enter your email">
+                <span class="error"></span><br>
+                
+            <label for="updates">Would you like email updates from gameHabit?</label><br>
+                <input type="radio" name="updates" value="yes">Yes
+                <input type="radio" name="updates" value="no">No
+                
+          </section>        
+          <section class="col-xs-6">
+              
+            <label for="hours">How many hours a week do you spend gaming?</label>
+              <input name="hours" type="number" min="0" max="168">
+              
+            <label for="system">What is your main gaming platform?</label>
+                <select name="system">
+                  <option value="ps4">Playstation 4</option>
+                  <option value="xbox1">Xbox One</option>
+                  <option value="switch">Nintendo Switch</option>
+                  <option value="pc">PC</option>
+                  <option value="3ds">Nintendo 3ds</option>
+                </select>
+                
+            <label for="genres">What is your favorite genre(s)?</label><br>
+                <input type="checkbox" name="genre1" value="action">Action<br>
+                <input type="checkbox" name="genre2" value="adventure">Adventure<br>
+                <input type="checkbox" name="genre3" value="fps">First-person Shooter<br>
+                <input type="checkbox" name="genre4" value="mmo">MMO<br>
+                <input type="checkbox" name="genre5" value="platformer">Platformer<br>
+                <input type="checkbox" name="genre6" value="puzzle">Puzzle<br>
+                <input type="checkbox" name="genre7" value="racing">Racing<br>
+                <input type="checkbox" name="genre8" value="rpg">RPG<br>
+                <input type="checkbox" name="genre9" value="rts">Strategy<br>
+                
+          </section>
+        </section>
+        
+          <input class="btn btn-primary" type="submit">
+        
+      </fieldset>
+    </form>
+  </body>
+</html>
