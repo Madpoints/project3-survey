@@ -13,34 +13,41 @@
     <title>gameHabit Registration</title>
   </head>
   <body>
+    <header><h1>gameHabit Registration</h1></header>
     <form class="jumbotron" method="post">
       <fieldset class="container">
           
         <section class="row">
           <section class="col-xs-6">
+            
+              
+            <p>Username and Password</p>
                              
-            <label for="username">Username</label>
+            <label for="username">Username</label><br>
               <input name="username" type="text" placeholder=" Enter your name" required="">
                 <span class="error"></span><br>
                 
-            <label for="password">Password</label>
-              <input name="password" type="password" required="">
+            <label for="password">Password</label><br>
+              <input name="password" type="password" placeholder=" Choose password" required="">
                 <span class="error"></span><br>
                       
-            <label for="verify">Verify Password</label>
-              <input name="verify" type="password" required="">
+            <label for="verify">Verify Password</label><br>
+              <input name="verify" type="password" placeholder=" Confirm password" required="">
                 <span class="error"></span><br>
                         
-            <label for="email">Email</label>
+            <label for="email">Email</label><br>
               <input name="email" type="email" placeholder=" Enter your email">
                 <span class="error"></span><br>
                 
             <label for="updates">Would you like email updates from gameHabit?</label><br>
-                <input type="radio" name="updates" value="yes">Yes
-                <input type="radio" name="updates" value="no">No
+                <input type="radio" name="updates" value="yes" checked required>Yes
+                <input type="radio" name="updates" value="no" required>No
+                <input type="radio" name="updates" value="later" required>Decide later
                 
           </section>        
           <section class="col-xs-6">
+            
+            <p>Tell us about your gaming habit</p>
               
             <label for="hours">How many hours a week do you spend gaming?</label>
               <input name="hours" type="number" min="0" max="168">
@@ -64,6 +71,9 @@
                 <input type="checkbox" name="genre7" value="racing">Racing<br>
                 <input type="checkbox" name="genre8" value="rpg">RPG<br>
                 <input type="checkbox" name="genre9" value="rts">Strategy<br>
+            
+            <label for="other">More info</label><br>
+                <textarea name="other" rows="4" cols="50">Tell us more about yourself, what other systems you own, why you enjoy gaming...etc</textarea>
                 
           </section>
         </section>
