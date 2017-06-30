@@ -18,7 +18,7 @@
         <h1 class="text-center">gameHabit Registration</h1>
     </header>
     
-    <form class="jumbotron" method="post">
+    <form id="user-survey" class="jumbotron" method="post">
       <fieldset class="container">
           
         <section class="row">
@@ -28,22 +28,22 @@
             <p>Username and Password</p>
                              
             <label for="username">Username</label><br>
-              <input name="signup" type="text" placeholder=" Enter your name" required="">
-                <span class="error"></span><br><br>
+              <input id="username" name="signup" type="text" placeholder=" Enter your name" required="">
+                <br><br>
                 
             <label for="password">Password</label><br>
-              <input name="signup" type="password" placeholder=" Choose password" required="">
-                <span class="error"></span><br><br>
+              <input id="password" name="signup" type="password" placeholder=" Choose password" required="">
+                <br><br>
                       
             <label for="verify">Verify Password</label><br>
-              <input name="signup" type="password" placeholder=" Confirm password" required="">
-                <span class="error"></span><br><br>
+              <input id="verify" name="signup" type="password" placeholder=" Confirm password" required="">
+                <span id="error" class="error"></span><br><br>
                         
             <label for="email">Email</label><br>
-              <input name="signup" type="email" placeholder=" Enter your email">
-                <span class="error"></span><br><br>
+              <input id="email" name="signup" type="email" placeholder=" Enter your email">
+                <br><br>
                 
-            <label for="updates">Would you like email updates from gameHabit?</label><br>
+            <label for="updates">Would you like regular updates from gameHabit?</label><br>
                 <input type="radio" name="updates" value="yes" checked required>Yes
                 <input type="radio" name="updates" value="no" required>No
                 <input type="radio" name="updates" value="later" required>Decide later
