@@ -9,7 +9,7 @@ $(document).ready(function() {
 function validation(event) {
     
     //prevent form submission
-    event.preventDefault();
+    // event.preventDefault();
     
     //clear error
     clearError();
@@ -17,18 +17,11 @@ function validation(event) {
     var password = $('#password').val();
     var verify = $('#verify').val();
     
-    //if passwords do not match display error
+    //if passwords do not match stop event and display error
     if (password != verify) {
+        event.preventDefault();
         displayError();   
     }
-    //else clear error and alert user
-    else {
-        clearError();
-        alert("User info submitted"); 
-        $('#user-survey').trigger("reset");
-    }
-
-    
 }
 
 function displayError() {

@@ -18,7 +18,7 @@
         <h1 class="text-center">gameHabit Registration</h1>
     </header>
     
-    <form id="user-survey" class="jumbotron" method="post">
+    <form id="user-survey" class="jumbotron" method="GET" action="registered.html">
       <fieldset class="container">
           
         <section class="row">
@@ -28,19 +28,19 @@
             <p>Sign Up</p>
                              
             <label for="username">Username</label><br>
-              <input id="username" name="signup" type="text" placeholder=" Enter your name" required="">
+              <input id="username" name="username" type="text" placeholder=" Enter your name" required="">
                 <br><br>
                 
             <label for="password">Password</label><br>
-              <input id="password" name="signup" type="password" placeholder=" Choose password" required="">
+              <input id="password" name="password" type="password" placeholder=" Choose password" required="">
                 <br><br>
                       
             <label for="verify">Verify Password</label><br>
-              <input id="verify" name="signup" type="password" placeholder=" Confirm password" required="">
+              <input id="verify" name="verify" type="password" placeholder=" Confirm password" required="">
                 <span id="error" class="error-message" hidden="true"></span><br><br>
                         
             <label for="email">Email</label><br>
-              <input id="email" name="signup" type="email" placeholder=" Enter your email">
+              <input id="email" name="email" type="email" placeholder=" Enter your email">
                 <br><br>
                 
             <label for="updates">Would you like regular updates from gameHabit?</label><br>
@@ -58,6 +58,7 @@
               
             <label for="system">What is your main gaming platform?</label>
                 <select name="signup">
+                  <option value=""></option>
                   <option value="ps4">Playstation 4</option>
                   <option value="xbox1">Xbox One</option>
                   <option value="switch">Nintendo Switch</option>
