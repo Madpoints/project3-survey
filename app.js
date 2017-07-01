@@ -8,9 +8,6 @@ $(document).ready(function() {
 
 function validation(event) {
     
-    //prevent form submission
-    // event.preventDefault();
-    
     //clear error
     clearError();
     

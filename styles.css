@@ -38,25 +38,18 @@ input[type=radio] {
     color: #9C4D49;
 }
 
-/*strong {*/
-/*    border: 1px solid #E3E3E3;*/
-/*    border-top-right-radius: 3px;*/
-/*    border-bottom-right-radius: 3px;*/
-/*    padding: .36em;*/
-/*}*/
+#title {
+    background-color: #EEEEEE;
+    height: auto;
+    padding: 10px;
+    line-height: 0;
+    color: black;
+    text-align: center;
+}
 
-/*#title {*/
-/*    background-color: #EEEEEE;*/
-/*    height: auto;*/
-/*    padding: 10px;*/
-/*    line-height: 0;*/
-/*    color: black;*/
-/*    text-align: center;*/
-/*}*/
-
-/*#button {*/
-/*    color: white;*/
-/*    padding: 10px;*/
-/*    font-size: 1em;*/
-/*    margin-left: 1em;*/
-/*}*/
+#button {
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    margin-left: 1em;
+}
